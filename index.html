@@ -1,0 +1,9 @@
+The message “visudo: /etc/sudoers busy, try again later” means that the /etc/sudoers file is currently being edited by another process or user. The visudo command is designed to safely edit the sudoers file by locking it to prevent multiple simultaneous edits, which could lead to conflicts or corruption12.
+
+To resolve this, you can:
+
+Wait a few moments and try running visudo again.
+Check for any running visudo processes using a command like ps aux | grep visudo and terminate them if necessary (be cautious with this approach).
+Ensure no other users are editing the sudoers file at the same time.
+If you have any more questions or need further assistance, feel free to ask!
+
